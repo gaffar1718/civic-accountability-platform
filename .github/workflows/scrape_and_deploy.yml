@@ -72,12 +72,12 @@ jobs:
       - name: "Run scraper"
         env:
           FORCE_SEED: ${{ github.event.inputs.force_seed || 'false' }}
+          PARSE_API_KEY: ${{ secrets.PARSE_API_KEY }}
         run: |
           echo "Force seed mode: $FORCE_SEED"
           python scraper/main.py
           echo "--- Scraped output (first 40 lines) ---"
           head -n 40 public/data.json
-
       # ── 5. Validate output JSON ──────────────────────────────────────────
       - name: "Validate output JSON"
         run: |
