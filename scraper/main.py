@@ -129,43 +129,36 @@ def _state_centroid(state: str) -> list[float]:
 # =============================================================================
 
 def _parse_cppp_table(html: str) -> list[dict[str, Any]]:
-    """Parse the CPPP tender search results table into project records."""
+    """Parse the CPPP tender search results table using a row-count heuristic."""
     soup = BeautifulSoup(html, "html.parser")
     projects: list[dict[str, Any]] = []
 
-    # 1. SMART TARGETING: Find the actual data table, skip the layout menus
-    target_table = None
-    for table in soup.find_all("table"):
-        text_content = table.get_text()
-        # The real list of tenders always contains these specific column headers
-        if "Tender Title" in text_content and "Organisation Chain" in text_content:
-            target_table = table
-            break
-
-    if not target_table:
-        log.warning("Could not find the actual tender data table in the HTML. Site layout may have changed.")
+    tables = soup.find_all("table")
+    if not tables:
+        log.warning("No tables found in CPPP response HTML.")
         return []
 
-    # 2. EXTRACT DATA ROWS
+    # Automatically pick the table with the most rows (the main data grid)
+    target_table = max(tables, key=lambda t: len(t.find_all("tr")))
     rows = target_table.find_all("tr")
+    
     for idx, row in enumerate(rows):
+        cells = [td.get_text(" ", strip=True) for td in row.find_all(["td", "th"])]
+        if len(cells) < 4:
+            continue
+        
         # Skip header rows
-        if row.find("th") or "list_header" in row.get("class", []):
+        text_join = " ".join(cells).lower()
+        if "tender title" in text_join or "s.no" in text_join or "organisation chain" in text_join:
             continue
 
-        cells = [td.get_text(" ", strip=True) for td in row.find_all("td")]
+        title = cells[4] if len(cells) > 4 else cells[1]
+        org = cells[5] if len(cells) > 5 else "Government of India"
         
-        # Real CPPP tender tables usually have exactly 6 columns: 
-        # S.No | e-Published Date | Closing Date | Opening Date | Title and Ref.No | Organisation Chain
-        if len(cells) < 6:
-            continue
-
-        title = cells[4]
-        org = cells[5]
-        
-        # Clean up excessive whitespace or HTML artifacts in the title
         title = re.sub(r'\s+', ' ', title).strip()
-        
+        if not title or len(title) < 5:
+            continue
+
         state = _infer_state(org + " " + title)
 
         projects.append(
@@ -174,8 +167,6 @@ def _parse_cppp_table(html: str) -> list[dict[str, Any]]:
                 project_title=title,
                 state=state,
                 constituency="Unknown",
-                # Note: The main table on CPPP doesn't show exact tender value amounts without clicking into them.
-                # Setting a placeholder of 1.0 Crore for dashboard visibility.
                 sanctioned_amount_cr=1.0, 
                 progress_percent=0.0,
                 start_date=str(date.today()),
@@ -188,7 +179,6 @@ def _parse_cppp_table(html: str) -> list[dict[str, Any]]:
             )
         )
     return projects
-
 # =============================================================================
 # LIVE SCRAPER — ScraperAPI Integration
 # =============================================================================
