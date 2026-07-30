@@ -1,16 +1,16 @@
 [
   {
-    "id": "LIVE-0005",
-    "project_title": "30-Jul-2026",
+    "id": "LIVE-0087",
+    "project_title": "Enter Captcha",
     "state": "Central Government",
     "constituency": "Unknown",
-    "sanctioned_amount_cr": 0.0,
+    "sanctioned_amount_cr": 1.0,
     "progress_percent": 0.0,
     "start_date": "2026-07-30",
-    "contractor": "Search|Active Tenders|Tenders by Closing Date|Corrigendum|Bid Awards|CPPP Home",
+    "contractor": "Government of India",
     "ruling_party_at_start": "Unknown",
     "current_ruling_party": "Unknown",
-    "official_in_charge": "Search|Active Tenders|Tenders by Closing Date|Corrigendum|Bid Awards|CPPP Home",
+    "official_in_charge": "Government of India",
     "coordinates": [
       20.5937,
       78.9629
@@ -18,219 +18,21 @@
     "source": "eprocure.gov.in (via ScraperAPI)",
     "delay_months": 0,
     "tags": [],
-    "severity_score": 0.0,
-    "scraped_at": "2026-07-30T02:54:55.762821Z"
-  },
-  {
-    "id": "LIVE-0006",
-    "project_title": "Search|Active Tenders|Tenders by Closing Date|Corrigendum|Bid Awards|CPPP Home",
-    "state": "Central Government",
-    "constituency": "Unknown",
-    "sanctioned_amount_cr": 0.0,
-    "progress_percent": 0.0,
-    "start_date": "2026-07-30",
-    "contractor": "",
-    "ruling_party_at_start": "Unknown",
-    "current_ruling_party": "Unknown",
-    "official_in_charge": "",
-    "coordinates": [
-      20.5937,
-      78.9629
-    ],
-    "source": "eprocure.gov.in (via ScraperAPI)",
-    "delay_months": 0,
-    "tags": [],
-    "severity_score": 0.0,
-    "scraped_at": "2026-07-30T02:54:55.763036Z"
-  },
-  {
-    "id": "LIVE-0011",
-    "project_title": "MIS ReportsTenders by LocationTenders by OrganisationTenders by ClassificationTenders in ArchiveTenders StatusCancelled/RetenderedDownloadsDebarment ListAnnouncementsRecognitionsSite compatibility",
-    "state": "Central Government",
-    "constituency": "Unknown",
-    "sanctioned_amount_cr": 0.0,
-    "progress_percent": 0.0,
-    "start_date": "2026-07-30",
-    "contractor": "",
-    "ruling_party_at_start": "Unknown",
-    "current_ruling_party": "Unknown",
-    "official_in_charge": "",
-    "coordinates": [
-      20.5937,
-      78.9629
-    ],
-    "source": "eprocure.gov.in (via ScraperAPI)",
-    "delay_months": 0,
-    "tags": [],
-    "severity_score": 0.0,
-    "scraped_at": "2026-07-30T02:54:55.764805Z"
-  },
-  {
-    "id": "LIVE-0012",
-    "project_title": "",
-    "state": "Central Government",
-    "constituency": "Unknown",
-    "sanctioned_amount_cr": 0.0,
-    "progress_percent": 0.0,
-    "start_date": "2026-07-30",
-    "contractor": "MIS ReportsTenders by LocationTenders by OrganisationTenders by ClassificationTenders in ArchiveTenders StatusCancelled/RetenderedDownloadsDebarment ListAnnouncementsRecognitionsSite compatibility",
-    "ruling_party_at_start": "Unknown",
-    "current_ruling_party": "Unknown",
-    "official_in_charge": "MIS ReportsTenders by LocationTenders by OrganisationTenders by ClassificationTenders in ArchiveTenders StatusCancelled/RetenderedDownloadsDebarment ListAnnouncementsRecognitionsSite compatibility",
-    "coordinates": [
-      20.5937,
-      78.9629
-    ],
-    "source": "eprocure.gov.in (via ScraperAPI)",
-    "delay_months": 0,
-    "tags": [],
-    "severity_score": 0.0,
-    "scraped_at": "2026-07-30T02:54:55.766193Z"
-  },
-  {
-    "id": "LIVE-0014",
-    "project_title": "MIS Reports",
-    "state": "Central Government",
-    "constituency": "Unknown",
-    "sanctioned_amount_cr": 0.0,
-    "progress_percent": 0.0,
-    "start_date": "2026-07-30",
-    "contractor": "",
-    "ruling_party_at_start": "Unknown",
-    "current_ruling_party": "Unknown",
-    "official_in_charge": "",
-    "coordinates": [
-      20.5937,
-      78.9629
-    ],
-    "source": "eprocure.gov.in (via ScraperAPI)",
-    "delay_months": 0,
-    "tags": [],
-    "severity_score": 0.0,
-    "scraped_at": "2026-07-30T02:54:55.766888Z"
-  },
-  {
-    "id": "LIVE-0057",
-    "project_title": "",
-    "state": "Central Government",
-    "constituency": "Unknown",
-    "sanctioned_amount_cr": 0.0,
-    "progress_percent": 0.0,
-    "start_date": "2026-07-30",
-    "contractor": "",
-    "ruling_party_at_start": "Unknown",
-    "current_ruling_party": "Unknown",
-    "official_in_charge": "",
-    "coordinates": [
-      20.5937,
-      78.9629
-    ],
-    "source": "eprocure.gov.in (via ScraperAPI)",
-    "delay_months": 0,
-    "tags": [],
-    "severity_score": 0.0,
-    "scraped_at": "2026-07-30T02:54:55.767478Z"
-  },
-  {
-    "id": "LIVE-0074",
-    "project_title": "Active TendersBackSearchTender IDTender TitleSelect Sorting OptionPublished DateClosing DateOpening DateTender IDEnter CaptchaRefreshProvide Captcha and click on Search button to list all active tenders.Clear",
-    "state": "Central Government",
-    "constituency": "Unknown",
-    "sanctioned_amount_cr": 0.0,
-    "progress_percent": 0.0,
-    "start_date": "2026-07-30",
-    "contractor": "Active TendersBackSearchTender IDTender TitleSelect Sorting OptionPublished DateClosing DateOpening DateTender IDEnter CaptchaRefreshProvide Captcha and click on Search button to list all active tenders.Clear",
-    "ruling_party_at_start": "Unknown",
-    "current_ruling_party": "Unknown",
-    "official_in_charge": "Active TendersBackSearchTender IDTender TitleSelect Sorting OptionPublished DateClosing DateOpening DateTender IDEnter CaptchaRefreshProvide Captcha and click on Search button to list all active tenders.Clear",
-    "coordinates": [
-      20.5937,
-      78.9629
-    ],
-    "source": "eprocure.gov.in (via ScraperAPI)",
-    "delay_months": 0,
-    "tags": [],
-    "severity_score": 0.0,
-    "scraped_at": "2026-07-30T02:54:55.768206Z"
-  },
-  {
-    "id": "LIVE-0075",
-    "project_title": "Active TendersBackSearchTender IDTender TitleSelect Sorting OptionPublished DateClosing DateOpening DateTender IDEnter CaptchaRefreshProvide Captcha and click on Search button to list all active tenders.Clear",
-    "state": "Central Government",
-    "constituency": "Unknown",
-    "sanctioned_amount_cr": 0.0,
-    "progress_percent": 0.0,
-    "start_date": "2026-07-30",
-    "contractor": "",
-    "ruling_party_at_start": "Unknown",
-    "current_ruling_party": "Unknown",
-    "official_in_charge": "",
-    "coordinates": [
-      20.5937,
-      78.9629
-    ],
-    "source": "eprocure.gov.in (via ScraperAPI)",
-    "delay_months": 0,
-    "tags": [],
-    "severity_score": 0.0,
-    "scraped_at": "2026-07-30T02:54:55.768690Z"
-  },
-  {
-    "id": "LIVE-0076",
-    "project_title": "",
-    "state": "Central Government",
-    "constituency": "Unknown",
-    "sanctioned_amount_cr": 0.0,
-    "progress_percent": 0.0,
-    "start_date": "2026-07-30",
-    "contractor": "Active TendersBack",
-    "ruling_party_at_start": "Unknown",
-    "current_ruling_party": "Unknown",
-    "official_in_charge": "Active TendersBack",
-    "coordinates": [
-      20.5937,
-      78.9629
-    ],
-    "source": "eprocure.gov.in (via ScraperAPI)",
-    "delay_months": 0,
-    "tags": [],
-    "severity_score": 0.0,
-    "scraped_at": "2026-07-30T02:54:55.769050Z"
-  },
-  {
-    "id": "LIVE-0082",
-    "project_title": "Search",
-    "state": "Central Government",
-    "constituency": "Unknown",
-    "sanctioned_amount_cr": 0.0,
-    "progress_percent": 0.0,
-    "start_date": "2026-07-30",
-    "contractor": "Tender ID",
-    "ruling_party_at_start": "Unknown",
-    "current_ruling_party": "Unknown",
-    "official_in_charge": "Tender ID",
-    "coordinates": [
-      20.5937,
-      78.9629
-    ],
-    "source": "eprocure.gov.in (via ScraperAPI)",
-    "delay_months": 0,
-    "tags": [],
-    "severity_score": 0.0,
-    "scraped_at": "2026-07-30T02:54:55.769345Z"
+    "severity_score": 100.0,
+    "scraped_at": "2026-07-30T03:12:30.683121Z"
   },
   {
     "id": "LIVE-0094",
-    "project_title": "Visitor No:32888288",
+    "project_title": "Designed, Developed and Hosted by National Informatics Centre",
     "state": "Central Government",
     "constituency": "Unknown",
-    "sanctioned_amount_cr": 0.0,
+    "sanctioned_amount_cr": 1.0,
     "progress_percent": 0.0,
     "start_date": "2026-07-30",
-    "contractor": "Contents owned and maintained by concerned Departments in coordination with Finance Department and Information Technology Department, Government of India",
+    "contractor": "Version : 1.09.24 16-Jul-2026 (c) 2017 Tenders NIC, All rights reserved. Site best viewed with a screen resolution 1920 x 1080.",
     "ruling_party_at_start": "Unknown",
     "current_ruling_party": "Unknown",
-    "official_in_charge": "Contents owned and maintained by concerned Departments in coordination with Finance Department and Information Technology Department, Government of India",
+    "official_in_charge": "Version : 1.09.24 16-Jul-2026 (c) 2017 Tenders NIC, All rights reserved. Site best viewed with a screen resolution 1920 x 1080.",
     "coordinates": [
       20.5937,
       78.9629
@@ -238,7 +40,29 @@
     "source": "eprocure.gov.in (via ScraperAPI)",
     "delay_months": 0,
     "tags": [],
-    "severity_score": 0.0,
-    "scraped_at": "2026-07-30T02:54:55.769762Z"
+    "severity_score": 100.0,
+    "scraped_at": "2026-07-30T03:12:30.683274Z"
+  },
+  {
+    "id": "LIVE-0097",
+    "project_title": "Designed, Developed and Hosted by National Informatics Centre",
+    "state": "Central Government",
+    "constituency": "Unknown",
+    "sanctioned_amount_cr": 1.0,
+    "progress_percent": 0.0,
+    "start_date": "2026-07-30",
+    "contractor": "Government of India",
+    "ruling_party_at_start": "Unknown",
+    "current_ruling_party": "Unknown",
+    "official_in_charge": "Government of India",
+    "coordinates": [
+      20.5937,
+      78.9629
+    ],
+    "source": "eprocure.gov.in (via ScraperAPI)",
+    "delay_months": 0,
+    "tags": [],
+    "severity_score": 100.0,
+    "scraped_at": "2026-07-30T03:12:30.683355Z"
   }
 ]
