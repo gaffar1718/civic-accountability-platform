@@ -1,88 +1,55 @@
 [
   {
-    "id": "AP-001",
-    "project_title": "Pedana Municipal Road Widening & Drainage Improvement Project",
-    "state": "Andhra Pradesh",
-    "constituency": "Pedana",
-    "sanctioned_amount_cr": 142.5,
-    "progress_percent": 18,
-    "start_date": "2021-04-01",
-    "contractor": "Sri Venkata Constructions Pvt. Ltd.",
-    "ruling_party_at_start": "YSR Congress Party (YSRCP)",
-    "current_ruling_party": "Telugu Desam Party (TDP)",
-    "official_in_charge": "District Collector, Krishna",
-    "coordinates": [16.2517, 81.1498],
-    "source": "Andhra Pradesh State Audit Report 2023-24",
-    "delay_months": 28,
-    "tags": ["road", "drainage", "urban"]
+    "id": "KL-001",
+    "project_title": "Thiruvananthapuram SilverLine Rail (K-Rail) Package 1",
+    "state": "Kerala",
+    "constituency": "Thiruvananthapuram",
+    "sanctioned_amount_cr": 63940.0,
+    "progress_percent": 4,
+    "start_date": "2022-01-01",
+    "contractor": "RITES + KRDCL",
+    "ruling_party_at_start": "Left Democratic Front (LDF)",
+    "current_ruling_party": "Left Democratic Front (LDF)",
+    "official_in_charge": "MD, K-Rail (KRDCL)",
+    "coordinates": [
+      8.5241,
+      76.9366
+    ],
+    "source": "Kerala Assembly Committee Report 2023",
+    "delay_months": 30,
+    "tags": [
+      "rail",
+      "semi high speed",
+      "stalled"
+    ],
+    "severity_score": 6138240.0,
+    "scraped_at": "2026-07-30T01:27:56.835435Z"
   },
   {
-    "id": "AP-002",
-    "project_title": "Pedana Fishermen Harbour Modernisation & Cold Storage Facility",
-    "state": "Andhra Pradesh",
-    "constituency": "Pedana",
-    "sanctioned_amount_cr": 89.3,
-    "progress_percent": 9,
-    "start_date": "2022-01-15",
-    "contractor": "Coastal Infrastructure Corp.",
-    "ruling_party_at_start": "YSR Congress Party (YSRCP)",
-    "current_ruling_party": "Telugu Desam Party (TDP)",
-    "official_in_charge": "Fisheries Dept. Commissioner, AP",
-    "coordinates": [16.2480, 81.1650],
-    "source": "CAG Report 2023",
-    "delay_months": 18,
-    "tags": ["fisheries", "harbour", "livelihood"]
-  },
-  {
-    "id": "AP-003",
-    "project_title": "Machilipatnam–Pedana State Highway 4-Lane Widening",
-    "state": "Andhra Pradesh",
-    "constituency": "Machilipatnam",
-    "sanctioned_amount_cr": 315.0,
-    "progress_percent": 31,
-    "start_date": "2020-07-01",
-    "contractor": "NCC Ltd.",
-    "ruling_party_at_start": "YSR Congress Party (YSRCP)",
-    "current_ruling_party": "Telugu Desam Party (TDP)",
-    "official_in_charge": "SE, Roads & Buildings, Krishna",
-    "coordinates": [16.1875, 81.1390],
-    "source": "AP Vigilance & Enforcement Dept.",
-    "delay_months": 42,
-    "tags": ["highway", "road", "transport"]
-  },
-  {
-    "id": "TS-001",
-    "project_title": "Hyderabad Outer Ring Road Phase-III Extension (Patancheru–Shamshabad)",
-    "state": "Telangana",
-    "constituency": "Patancheru",
-    "sanctioned_amount_cr": 2840.0,
-    "progress_percent": 44,
-    "start_date": "2019-09-01",
-    "contractor": "L&T Construction",
-    "ruling_party_at_start": "Telangana Rashtra Samithi (TRS)",
-    "current_ruling_party": "Indian National Congress (INC)",
-    "official_in_charge": "MD, HMDA",
-    "coordinates": [17.5351, 78.3098],
-    "source": "HMDA Project Status Report Q4 2023",
-    "delay_months": 36,
-    "tags": ["highway", "ring road", "infrastructure"]
-  },
-  {
-    "id": "MH-001",
-    "project_title": "Mumbai Coastal Road Project (Marine Lines–Bandra Section)",
-    "state": "Maharashtra",
-    "constituency": "Mumbai South",
-    "sanctioned_amount_cr": 12500.0,
-    "progress_percent": 67,
-    "start_date": "2018-12-01",
-    "contractor": "HCC–Kalpataru JV",
+    "id": "GJ-001",
+    "project_title": "Bullet Train — Ahmedabad–Mumbai (Gujarat Section G3)",
+    "state": "Gujarat",
+    "constituency": "Anand",
+    "sanctioned_amount_cr": 31200.0,
+    "progress_percent": 35,
+    "start_date": "2021-01-01",
+    "contractor": "Larsen & Toubro (Civil Works)",
     "ruling_party_at_start": "Bharatiya Janata Party (BJP)",
-    "current_ruling_party": "Mahayuti Alliance (BJP–SHS–NCP)",
-    "official_in_charge": "BMC Commissioner",
-    "coordinates": [18.9445, 72.8192],
-    "source": "BMC Progress Report 2024",
-    "delay_months": 54,
-    "tags": ["coastal road", "urban infrastructure", "Mumbai"]
+    "current_ruling_party": "Bharatiya Janata Party (BJP)",
+    "official_in_charge": "MD, NHSRCL",
+    "coordinates": [
+      22.5645,
+      72.9289
+    ],
+    "source": "NHSRCL Monthly Report Apr 2024",
+    "delay_months": 24,
+    "tags": [
+      "bullet train",
+      "rail",
+      "infrastructure"
+    ],
+    "severity_score": 2028000.0,
+    "scraped_at": "2026-07-30T01:27:56.835398Z"
   },
   {
     "id": "UP-001",
@@ -96,27 +63,19 @@
     "ruling_party_at_start": "Bharatiya Janata Party (BJP)",
     "current_ruling_party": "Bharatiya Janata Party (BJP)",
     "official_in_charge": "CEO, UPEIDA",
-    "coordinates": [28.9845, 77.7064],
+    "coordinates": [
+      28.9845,
+      77.7064
+    ],
     "source": "UPEIDA Official Progress Tracker",
     "delay_months": 12,
-    "tags": ["expressway", "infrastructure", "UP"]
-  },
-  {
-    "id": "RJ-001",
-    "project_title": "Rajasthan Rural Drinking Water Supply (Jal Jeevan Mission – Barmer District)",
-    "state": "Rajasthan",
-    "constituency": "Barmer",
-    "sanctioned_amount_cr": 456.7,
-    "progress_percent": 28,
-    "start_date": "2021-06-01",
-    "contractor": "Patel Engineering Ltd.",
-    "ruling_party_at_start": "Indian National Congress (INC)",
-    "current_ruling_party": "Bharatiya Janata Party (BJP)",
-    "official_in_charge": "CE, PHED Rajasthan",
-    "coordinates": [25.7459, 71.3938],
-    "source": "Jal Shakti Ministry Dashboard",
-    "delay_months": 20,
-    "tags": ["water supply", "rural", "Jal Jeevan"]
+    "tags": [
+      "expressway",
+      "infrastructure",
+      "UP"
+    ],
+    "severity_score": 796400.0,
+    "scraped_at": "2026-07-30T01:27:56.835363Z"
   },
   {
     "id": "MP-001",
@@ -130,180 +89,149 @@
     "ruling_party_at_start": "Bharatiya Janata Party (BJP)",
     "current_ruling_party": "Bharatiya Janata Party (BJP)",
     "official_in_charge": "Chief Engineer, NWDA",
-    "coordinates": [23.8328, 79.4425],
+    "coordinates": [
+      23.8328,
+      79.4425
+    ],
     "source": "NWDA Progress Report 2024",
     "delay_months": 14,
-    "tags": ["river interlinking", "irrigation", "water"]
+    "tags": [
+      "river interlinking",
+      "irrigation",
+      "water"
+    ],
+    "severity_score": 748000.0,
+    "scraped_at": "2026-07-30T01:27:56.835376Z"
   },
   {
-    "id": "KA-001",
-    "project_title": "Bangalore Metro Phase 2A (Silk Board–KR Puram Elevated Corridor)",
-    "state": "Karnataka",
-    "constituency": "Mahadevapura",
-    "sanctioned_amount_cr": 5538.0,
-    "progress_percent": 52,
-    "start_date": "2019-06-01",
-    "contractor": "Afcons Infrastructure + BMRCL",
-    "ruling_party_at_start": "Indian National Congress (INC)",
+    "id": "JK-001",
+    "project_title": "USBRL Rail Link (Katra–Banihal Section)",
+    "state": "Jammu & Kashmir",
+    "constituency": "Udhampur",
+    "sanctioned_amount_cr": 31000.0,
+    "progress_percent": 82,
+    "start_date": "2002-07-04",
+    "contractor": "IRCON International + Afcons",
+    "ruling_party_at_start": "Central Government (J&K UT)",
+    "current_ruling_party": "National Conference — J&K",
+    "official_in_charge": "GM, Northern Railway",
+    "coordinates": [
+      32.9204,
+      75.1473
+    ],
+    "source": "Railway Ministry Completion Tracker",
+    "delay_months": 240,
+    "tags": [
+      "rail",
+      "strategic",
+      "tunnel"
+    ],
+    "severity_score": 558000.0,
+    "scraped_at": "2026-07-30T01:27:56.835454Z"
+  },
+  {
+    "id": "AR-001",
+    "project_title": "Arunachal Pradesh Trans-Arunachal Highway (Itanagar–Pasighat)",
+    "state": "Arunachal Pradesh",
+    "constituency": "Itanagar",
+    "sanctioned_amount_cr": 8930.0,
+    "progress_percent": 38,
+    "start_date": "2018-06-01",
+    "contractor": "Chetak Enterprises Ltd.",
+    "ruling_party_at_start": "Bharatiya Janata Party (BJP)",
+    "current_ruling_party": "Bharatiya Janata Party (BJP)",
+    "official_in_charge": "CE, Arunachal PWD",
+    "coordinates": [
+      27.0844,
+      93.6053
+    ],
+    "source": "BRO & NHIDCL Combined Report 2024",
+    "delay_months": 48,
+    "tags": [
+      "highway",
+      "strategic",
+      "border road"
+    ],
+    "severity_score": 553660.0,
+    "scraped_at": "2026-07-30T01:27:56.835488Z"
+  },
+  {
+    "id": "MH-001",
+    "project_title": "Mumbai Coastal Road Project (Marine Lines–Bandra Section)",
+    "state": "Maharashtra",
+    "constituency": "Mumbai South",
+    "sanctioned_amount_cr": 12500.0,
+    "progress_percent": 67,
+    "start_date": "2018-12-01",
+    "contractor": "HCC–Kalpataru JV",
+    "ruling_party_at_start": "Bharatiya Janata Party (BJP)",
+    "current_ruling_party": "Mahayuti Alliance (BJP–SHS–NCP)",
+    "official_in_charge": "BMC Commissioner",
+    "coordinates": [
+      18.9445,
+      72.8192
+    ],
+    "source": "BMC Progress Report 2024",
+    "delay_months": 54,
+    "tags": [
+      "coastal road",
+      "urban infrastructure",
+      "Mumbai"
+    ],
+    "severity_score": 412500.0,
+    "scraped_at": "2026-07-30T01:27:56.835358Z"
+  },
+  {
+    "id": "HP-001",
+    "project_title": "HP Mandi–Kullu–Manali NH 3 (4-Laning)",
+    "state": "Himachal Pradesh",
+    "constituency": "Mandi",
+    "sanctioned_amount_cr": 5200.0,
+    "progress_percent": 29,
+    "start_date": "2019-11-01",
+    "contractor": "Welspun Enterprises",
+    "ruling_party_at_start": "Bharatiya Janata Party (BJP)",
     "current_ruling_party": "Indian National Congress (INC)",
-    "official_in_charge": "MD, BMRCL",
-    "coordinates": [12.9193, 77.6411],
-    "source": "BMRCL Q1 2024 Report",
-    "delay_months": 30,
-    "tags": ["metro rail", "urban transit", "Bangalore"]
+    "official_in_charge": "RO, NHAI Himachal",
+    "coordinates": [
+      31.708,
+      76.932
+    ],
+    "source": "NHAI NH-3 Progress Report",
+    "delay_months": 38,
+    "tags": [
+      "highway",
+      "mountain road",
+      "tourism"
+    ],
+    "severity_score": 369200.0,
+    "scraped_at": "2026-07-30T01:27:56.835440Z"
   },
   {
-    "id": "TN-001",
-    "project_title": "Chennai–Kanyakumari Industrial Corridor (CKIC) Phase 1 Road Package",
-    "state": "Tamil Nadu",
-    "constituency": "Tirunelveli",
-    "sanctioned_amount_cr": 3400.0,
-    "progress_percent": 21,
-    "start_date": "2022-08-01",
-    "contractor": "KEC International",
-    "ruling_party_at_start": "Dravida Munnetra Kazhagam (DMK)",
-    "current_ruling_party": "Dravida Munnetra Kazhagam (DMK)",
-    "official_in_charge": "CEO, TIDCO",
-    "coordinates": [8.7139, 77.7567],
-    "source": "DPIIT CKIC Dashboard",
-    "delay_months": 16,
-    "tags": ["industrial corridor", "road", "TN"]
-  },
-  {
-    "id": "WB-001",
-    "project_title": "Kolkata East-West Metro Extension (Salt Lake–Howrah Maidan)",
-    "state": "West Bengal",
-    "constituency": "Kolkata South",
-    "sanctioned_amount_cr": 8978.0,
-    "progress_percent": 88,
-    "start_date": "2009-02-01",
-    "contractor": "RVNL + Metro Railway Kolkata",
-    "ruling_party_at_start": "All India Trinamool Congress (AITC)",
-    "current_ruling_party": "All India Trinamool Congress (AITC)",
-    "official_in_charge": "General Manager, Metro Railway",
-    "coordinates": [22.5726, 88.3639],
-    "source": "Metro Railway Kolkata Annual Report",
-    "delay_months": 120,
-    "tags": ["metro rail", "urban transit", "Kolkata"]
-  },
-  {
-    "id": "GJ-001",
-    "project_title": "Bullet Train Project — Ahmedabad–Mumbai (Gujarat Section Package G3)",
-    "state": "Gujarat",
-    "constituency": "Anand",
-    "sanctioned_amount_cr": 31200.0,
-    "progress_percent": 35,
-    "start_date": "2021-01-01",
-    "contractor": "Larsen & Toubro (Civil Works)",
-    "ruling_party_at_start": "Bharatiya Janata Party (BJP)",
+    "id": "DN-001",
+    "project_title": "Delhi–Meerut RRTS (Ghaziabad–Meerut South Section)",
+    "state": "Delhi NCT",
+    "constituency": "Ghaziabad",
+    "sanctioned_amount_cr": 30274.0,
+    "progress_percent": 89,
+    "start_date": "2019-03-08",
+    "contractor": "Samsung C&T + Alstom",
+    "ruling_party_at_start": "Aam Aadmi Party (AAP)",
     "current_ruling_party": "Bharatiya Janata Party (BJP)",
-    "official_in_charge": "MD, NHSRCL",
-    "coordinates": [22.5645, 72.9289],
-    "source": "NHSRCL Monthly Report Apr 2024",
-    "delay_months": 24,
-    "tags": ["bullet train", "rail", "infrastructure"]
-  },
-  {
-    "id": "PB-001",
-    "project_title": "Punjab Smart Cities Mission — Ludhiana Industrial Zone Upgrade",
-    "state": "Punjab",
-    "constituency": "Ludhiana West",
-    "sanctioned_amount_cr": 780.0,
-    "progress_percent": 39,
-    "start_date": "2020-10-01",
-    "contractor": "HPCL Infrastructure Ltd.",
-    "ruling_party_at_start": "Indian National Congress (INC)",
-    "current_ruling_party": "Aam Aadmi Party (AAP)",
-    "official_in_charge": "Commissioner, Ludhiana Municipal Corp.",
-    "coordinates": [30.9010, 75.8573],
-    "source": "Smart Cities Mission Dashboard 2024",
-    "delay_months": 22,
-    "tags": ["smart city", "industrial", "urban"]
-  },
-  {
-    "id": "HR-001",
-    "project_title": "Gurugram–Faridabad Expressway (Kundli–Manesar–Palwal Section)",
-    "state": "Haryana",
-    "constituency": "Faridabad",
-    "sanctioned_amount_cr": 5650.0,
-    "progress_percent": 56,
-    "start_date": "2019-04-01",
-    "contractor": "NHAI Package 7 — Dilip Buildcon",
-    "ruling_party_at_start": "Bharatiya Janata Party (BJP)",
-    "current_ruling_party": "Bharatiya Janata Party (BJP)",
-    "official_in_charge": "RO, NHAI Haryana",
-    "coordinates": [28.4089, 77.3178],
-    "source": "NHAI Project Dashboard",
-    "delay_months": 26,
-    "tags": ["expressway", "highway", "Haryana"]
-  },
-  {
-    "id": "BR-001",
-    "project_title": "Bihar Patna Elevated Road Corridor (AIIMS–Danapur)",
-    "state": "Bihar",
-    "constituency": "Patna Sahib",
-    "sanctioned_amount_cr": 1240.0,
-    "progress_percent": 27,
-    "start_date": "2021-11-01",
-    "contractor": "Gayatri Projects Ltd.",
-    "ruling_party_at_start": "Janata Dal (United) — NDA",
-    "current_ruling_party": "Janata Dal (United) — NDA",
-    "official_in_charge": "CE, Roads Construction Dept. Bihar",
-    "coordinates": [25.5941, 85.1376],
-    "source": "Bihar State PWD Report 2024",
+    "official_in_charge": "MD, NCRTC",
+    "coordinates": [
+      28.7041,
+      77.3044
+    ],
+    "source": "NCRTC Monthly Status Report",
     "delay_months": 18,
-    "tags": ["elevated road", "urban", "Patna"]
-  },
-  {
-    "id": "OR-001",
-    "project_title": "Odisha Bhubaneswar–Puri Expressway (Package 2)",
-    "state": "Odisha",
-    "constituency": "Puri",
-    "sanctioned_amount_cr": 890.0,
-    "progress_percent": 48,
-    "start_date": "2020-12-01",
-    "contractor": "Afcons Infrastructure",
-    "ruling_party_at_start": "Biju Janata Dal (BJD)",
-    "current_ruling_party": "Bharatiya Janata Party (BJP)",
-    "official_in_charge": "CE, NH Division Odisha",
-    "coordinates": [19.8133, 85.8312],
-    "source": "NHAI Odisha Region Report",
-    "delay_months": 20,
-    "tags": ["expressway", "highway", "tourism"]
-  },
-  {
-    "id": "CG-001",
-    "project_title": "Raipur Smart City Mission — Integrated Command & Control Centre",
-    "state": "Chhattisgarh",
-    "constituency": "Raipur City South",
-    "sanctioned_amount_cr": 187.5,
-    "progress_percent": 62,
-    "start_date": "2020-08-01",
-    "contractor": "Wipro GE Healthcare + Raipur Municipal Corp.",
-    "ruling_party_at_start": "Indian National Congress (INC)",
-    "current_ruling_party": "Bharatiya Janata Party (BJP)",
-    "official_in_charge": "CEO, Raipur Smart City Ltd.",
-    "coordinates": [21.2514, 81.6296],
-    "source": "Smart Cities Mission Portal 2024",
-    "delay_months": 18,
-    "tags": ["smart city", "ICT", "urban"]
-  },
-  {
-    "id": "JH-001",
-    "project_title": "Jharkhand Adivasi Village Road Connectivity (PMGSY Phase III — Khunti)",
-    "state": "Jharkhand",
-    "constituency": "Khunti",
-    "sanctioned_amount_cr": 234.0,
-    "progress_percent": 33,
-    "start_date": "2022-04-01",
-    "contractor": "Local PMGSY Contractor Pool",
-    "ruling_party_at_start": "Jharkhand Mukti Morcha (JMM)",
-    "current_ruling_party": "Bharatiya Janata Party (BJP)",
-    "official_in_charge": "PIU Chief Engineer, RIDA",
-    "coordinates": [23.0717, 85.2752],
-    "source": "PMGSY MIS Portal 2024",
-    "delay_months": 14,
-    "tags": ["rural road", "tribal", "PMGSY"]
+    "tags": [
+      "RRTS",
+      "rapid transit",
+      "NCR"
+    ],
+    "severity_score": 333014.0,
+    "scraped_at": "2026-07-30T01:27:56.835492Z"
   },
   {
     "id": "AS-001",
@@ -317,48 +245,153 @@
     "ruling_party_at_start": "Bharatiya Janata Party (BJP)",
     "current_ruling_party": "Bharatiya Janata Party (BJP)",
     "official_in_charge": "CE, PWD Assam",
-    "coordinates": [26.1445, 91.7362],
+    "coordinates": [
+      26.1445,
+      91.7362
+    ],
     "source": "Assam PWD Project Register 2024",
     "delay_months": 8,
-    "tags": ["tunnel", "river crossing", "Guwahati"]
+    "tags": [
+      "tunnel",
+      "river crossing",
+      "Guwahati"
+    ],
+    "severity_score": 327360.0,
+    "scraped_at": "2026-07-30T01:27:56.835430Z"
   },
   {
-    "id": "KL-001",
-    "project_title": "Thiruvananthapuram SilverLine Rail (K-Rail) Package 1",
-    "state": "Kerala",
-    "constituency": "Thiruvananthapuram",
-    "sanctioned_amount_cr": 63940.0,
-    "progress_percent": 4,
-    "start_date": "2022-01-01",
-    "contractor": "RITES + KRDCL",
-    "ruling_party_at_start": "Left Democratic Front (LDF)",
-    "current_ruling_party": "Left Democratic Front (LDF)",
-    "official_in_charge": "MD, K-Rail (KRDCL)",
-    "coordinates": [8.5241, 76.9366],
-    "source": "Kerala Assembly Committee Report 2023",
-    "delay_months": 30,
-    "tags": ["rail", "semi high speed", "stalled"]
+    "id": "TN-001",
+    "project_title": "Chennai–Kanyakumari Industrial Corridor (CKIC) Phase 1",
+    "state": "Tamil Nadu",
+    "constituency": "Tirunelveli",
+    "sanctioned_amount_cr": 3400.0,
+    "progress_percent": 21,
+    "start_date": "2022-08-01",
+    "contractor": "KEC International",
+    "ruling_party_at_start": "Dravida Munnetra Kazhagam (DMK)",
+    "current_ruling_party": "Dravida Munnetra Kazhagam (DMK)",
+    "official_in_charge": "CEO, TIDCO",
+    "coordinates": [
+      8.7139,
+      77.7567
+    ],
+    "source": "DPIIT CKIC Dashboard",
+    "delay_months": 16,
+    "tags": [
+      "industrial corridor",
+      "road",
+      "TN"
+    ],
+    "severity_score": 268600.0,
+    "scraped_at": "2026-07-30T01:27:56.835388Z"
   },
   {
-    "id": "HP-001",
-    "project_title": "Himachal Pradesh Mandi–Kullu–Manali National Highway 3 (4-Laning)",
-    "state": "Himachal Pradesh",
-    "constituency": "Mandi",
-    "sanctioned_amount_cr": 5200.0,
-    "progress_percent": 29,
-    "start_date": "2019-11-01",
-    "contractor": "Welspun Enterprises",
-    "ruling_party_at_start": "Bharatiya Janata Party (BJP)",
+    "id": "KA-001",
+    "project_title": "Bangalore Metro Phase 2A (Silk Board–KR Puram Elevated Corridor)",
+    "state": "Karnataka",
+    "constituency": "Mahadevapura",
+    "sanctioned_amount_cr": 5538.0,
+    "progress_percent": 52,
+    "start_date": "2019-06-01",
+    "contractor": "Afcons Infrastructure + BMRCL",
+    "ruling_party_at_start": "Indian National Congress (INC)",
     "current_ruling_party": "Indian National Congress (INC)",
-    "official_in_charge": "RO, NHAI Himachal",
-    "coordinates": [31.7080, 76.9320],
-    "source": "NHAI NH-3 Progress Report",
-    "delay_months": 38,
-    "tags": ["highway", "mountain road", "tourism"]
+    "official_in_charge": "MD, BMRCL",
+    "coordinates": [
+      12.9193,
+      77.6411
+    ],
+    "source": "BMRCL Q1 2024 Report",
+    "delay_months": 30,
+    "tags": [
+      "metro rail",
+      "urban transit",
+      "Bangalore"
+    ],
+    "severity_score": 265824.0,
+    "scraped_at": "2026-07-30T01:27:56.835382Z"
+  },
+  {
+    "id": "HR-001",
+    "project_title": "Gurugram–Faridabad Expressway (KMP Section)",
+    "state": "Haryana",
+    "constituency": "Faridabad",
+    "sanctioned_amount_cr": 5650.0,
+    "progress_percent": 56,
+    "start_date": "2019-04-01",
+    "contractor": "Dilip Buildcon",
+    "ruling_party_at_start": "Bharatiya Janata Party (BJP)",
+    "current_ruling_party": "Bharatiya Janata Party (BJP)",
+    "official_in_charge": "RO, NHAI Haryana",
+    "coordinates": [
+      28.4089,
+      77.3178
+    ],
+    "source": "NHAI Project Dashboard",
+    "delay_months": 26,
+    "tags": [
+      "expressway",
+      "highway",
+      "Haryana"
+    ],
+    "severity_score": 248600.0,
+    "scraped_at": "2026-07-30T01:27:56.835407Z"
+  },
+  {
+    "id": "TS-001",
+    "project_title": "Hyderabad ORR Phase-III Extension (Patancheru–Shamshabad)",
+    "state": "Telangana",
+    "constituency": "Patancheru",
+    "sanctioned_amount_cr": 2840.0,
+    "progress_percent": 44,
+    "start_date": "2019-09-01",
+    "contractor": "L&T Construction",
+    "ruling_party_at_start": "Telangana Rashtra Samithi (TRS)",
+    "current_ruling_party": "Indian National Congress (INC)",
+    "official_in_charge": "MD, HMDA",
+    "coordinates": [
+      17.5351,
+      78.3098
+    ],
+    "source": "HMDA Project Status Report Q4 2023",
+    "delay_months": 36,
+    "tags": [
+      "highway",
+      "ring road",
+      "infrastructure"
+    ],
+    "severity_score": 159040.0,
+    "scraped_at": "2026-07-30T01:27:56.835352Z"
+  },
+  {
+    "id": "NL-001",
+    "project_title": "Nagaland Dimapur–Kohima 4-Lane Highway (NH-29)",
+    "state": "Nagaland",
+    "constituency": "Dimapur",
+    "sanctioned_amount_cr": 2640.0,
+    "progress_percent": 43,
+    "start_date": "2019-05-01",
+    "contractor": "Dinesh Chandra R. Agrawal Infracon",
+    "ruling_party_at_start": "NDPP Alliance",
+    "current_ruling_party": "NDPP Alliance",
+    "official_in_charge": "NH Division CE, Nagaland PWD",
+    "coordinates": [
+      25.9042,
+      93.7278
+    ],
+    "source": "NHAI NE Region Monthly Report",
+    "delay_months": 32,
+    "tags": [
+      "highway",
+      "4-lane",
+      "Northeast"
+    ],
+    "severity_score": 150480.0,
+    "scraped_at": "2026-07-30T01:27:56.835478Z"
   },
   {
     "id": "UA-001",
-    "project_title": "Uttarakhand Char Dham All-Weather Road (Rishikesh–Badrinath Package 3)",
+    "project_title": "Char Dham All-Weather Road (Rishikesh–Badrinath Package 3)",
     "state": "Uttarakhand",
     "constituency": "Badrinath",
     "sanctioned_amount_cr": 4500.0,
@@ -368,78 +401,19 @@
     "ruling_party_at_start": "Bharatiya Janata Party (BJP)",
     "current_ruling_party": "Bharatiya Janata Party (BJP)",
     "official_in_charge": "PD, BROP Uttarakhand",
-    "coordinates": [30.7433, 79.4938],
+    "coordinates": [
+      30.7433,
+      79.4938
+    ],
     "source": "Supreme Court Monitoring Committee Report",
     "delay_months": 48,
-    "tags": ["highway", "pilgrimage", "Char Dham"]
-  },
-  {
-    "id": "GA-001",
-    "project_title": "Goa Mormugao Port Trust New Berth & Container Terminal",
-    "state": "Goa",
-    "constituency": "Vasco Da Gama",
-    "sanctioned_amount_cr": 423.0,
-    "progress_percent": 41,
-    "start_date": "2021-03-01",
-    "contractor": "Mormugao Port Authority + Adani Ports",
-    "ruling_party_at_start": "Bharatiya Janata Party (BJP)",
-    "current_ruling_party": "Bharatiya Janata Party (BJP)",
-    "official_in_charge": "Chairman, Mormugao Port Authority",
-    "coordinates": [15.4112, 73.8012],
-    "source": "SAGARMALA Project Dashboard",
-    "delay_months": 15,
-    "tags": ["port", "maritime", "container"]
-  },
-  {
-    "id": "JK-001",
-    "project_title": "Jammu–Udhampur–Srinagar–Baramulla Rail Link (USBRL) — Katra–Banihal Section",
-    "state": "Jammu & Kashmir",
-    "constituency": "Udhampur",
-    "sanctioned_amount_cr": 31000.0,
-    "progress_percent": 82,
-    "start_date": "2002-07-04",
-    "contractor": "IRCON International + Afcons",
-    "ruling_party_at_start": "Central Government (J&K UT)",
-    "current_ruling_party": "National Conference — J&K",
-    "official_in_charge": "GM, Northern Railway",
-    "coordinates": [32.9204, 75.1473],
-    "source": "Railway Ministry Completion Tracker",
-    "delay_months": 240,
-    "tags": ["rail", "strategic", "tunnel"]
-  },
-  {
-    "id": "MN-001",
-    "project_title": "Imphal Smart City Road & Sewerage Network (Package B)",
-    "state": "Manipur",
-    "constituency": "Imphal East",
-    "sanctioned_amount_cr": 312.0,
-    "progress_percent": 22,
-    "start_date": "2021-08-01",
-    "contractor": "NBCC India Ltd.",
-    "ruling_party_at_start": "Bharatiya Janata Party (BJP)",
-    "current_ruling_party": "Bharatiya Janata Party (BJP)",
-    "official_in_charge": "CEO, Imphal Smart City SPV",
-    "coordinates": [24.8170, 93.9368],
-    "source": "Smart Cities Mission Portal",
-    "delay_months": 20,
-    "tags": ["smart city", "sewerage", "Northeast"]
-  },
-  {
-    "id": "SK-001",
-    "project_title": "Sikkim Gangtok Ropeway Expansion (Nam Nang–MG Marg)",
-    "state": "Sikkim",
-    "constituency": "Gangtok",
-    "sanctioned_amount_cr": 78.5,
-    "progress_percent": 55,
-    "start_date": "2022-06-01",
-    "contractor": "Doppelmayr India Pvt. Ltd.",
-    "ruling_party_at_start": "Sikkim Krantikari Morcha (SKM)",
-    "current_ruling_party": "Sikkim Krantikari Morcha (SKM)",
-    "official_in_charge": "SE, Urban Development Dept. Sikkim",
-    "coordinates": [27.3389, 88.6065],
-    "source": "Sikkim Tourism Dept. Records",
-    "delay_months": 12,
-    "tags": ["ropeway", "tourism", "urban"]
+    "tags": [
+      "highway",
+      "pilgrimage",
+      "Char Dham"
+    ],
+    "severity_score": 130500.0,
+    "scraped_at": "2026-07-30T01:27:56.835444Z"
   },
   {
     "id": "ML-001",
@@ -453,44 +427,175 @@
     "ruling_party_at_start": "National People's Party (NPP)",
     "current_ruling_party": "National People's Party (NPP)",
     "official_in_charge": "CE, NH Division Meghalaya",
-    "coordinates": [25.5788, 91.8933],
+    "coordinates": [
+      25.5788,
+      91.8933
+    ],
     "source": "NHAI Northeast Progress Report",
     "delay_months": 22,
-    "tags": ["ring road", "highway", "Northeast"]
+    "tags": [
+      "ring road",
+      "highway",
+      "Northeast"
+    ],
+    "severity_score": 123255.0,
+    "scraped_at": "2026-07-30T01:27:56.835469Z"
   },
   {
-    "id": "MZ-001",
-    "project_title": "Mizoram Aizawl Water Supply Augmentation Project (Tuivawl Dam)",
-    "state": "Mizoram",
-    "constituency": "Aizawl North",
-    "sanctioned_amount_cr": 198.0,
-    "progress_percent": 36,
-    "start_date": "2020-09-01",
-    "contractor": "Spunpipe India + PHED Mizoram",
-    "ruling_party_at_start": "Zoram People's Movement (ZPM) [post-2023]",
-    "current_ruling_party": "Zoram People's Movement (ZPM)",
-    "official_in_charge": "SE, PHED Aizawl",
-    "coordinates": [23.7271, 92.7176],
-    "source": "Jal Jeevan Mission MIS Dashboard",
-    "delay_months": 16,
-    "tags": ["water supply", "dam", "Northeast"]
+    "id": "WB-001",
+    "project_title": "Kolkata East-West Metro Extension (Salt Lake–Howrah Maidan)",
+    "state": "West Bengal",
+    "constituency": "Kolkata South",
+    "sanctioned_amount_cr": 8978.0,
+    "progress_percent": 88,
+    "start_date": "2009-02-01",
+    "contractor": "RVNL + Metro Railway Kolkata",
+    "ruling_party_at_start": "All India Trinamool Congress (AITC)",
+    "current_ruling_party": "All India Trinamool Congress (AITC)",
+    "official_in_charge": "General Manager, Metro Railway",
+    "coordinates": [
+      22.5726,
+      88.3639
+    ],
+    "source": "Metro Railway Kolkata Annual Report",
+    "delay_months": 120,
+    "tags": [
+      "metro rail",
+      "urban transit",
+      "Kolkata"
+    ],
+    "severity_score": 107736.0,
+    "scraped_at": "2026-07-30T01:27:56.835392Z"
   },
   {
-    "id": "NL-001",
-    "project_title": "Nagaland Dimapur–Kohima 4-Lane Highway (NH-29 Improvement)",
-    "state": "Nagaland",
-    "constituency": "Dimapur",
-    "sanctioned_amount_cr": 2640.0,
-    "progress_percent": 43,
-    "start_date": "2019-05-01",
-    "contractor": "Dinesh Chandra R. Agrawal Infracon",
-    "ruling_party_at_start": "Nationalist Democratic Progressive Party (NDPP)",
-    "current_ruling_party": "Nationalist Democratic Progressive Party (NDPP)",
-    "official_in_charge": "NH Division CE, Nagaland PWD",
-    "coordinates": [25.9042, 93.7278],
-    "source": "NHAI NE Region Monthly Report",
-    "delay_months": 32,
-    "tags": ["highway", "4-lane", "Northeast"]
+    "id": "BR-001",
+    "project_title": "Bihar Patna Elevated Road Corridor (AIIMS–Danapur)",
+    "state": "Bihar",
+    "constituency": "Patna Sahib",
+    "sanctioned_amount_cr": 1240.0,
+    "progress_percent": 27,
+    "start_date": "2021-11-01",
+    "contractor": "Gayatri Projects Ltd.",
+    "ruling_party_at_start": "Janata Dal (United) — NDA",
+    "current_ruling_party": "Janata Dal (United) — NDA",
+    "official_in_charge": "CE, Roads Construction Dept. Bihar",
+    "coordinates": [
+      25.5941,
+      85.1376
+    ],
+    "source": "Bihar State PWD Report 2024",
+    "delay_months": 18,
+    "tags": [
+      "elevated road",
+      "urban",
+      "Patna"
+    ],
+    "severity_score": 90520.0,
+    "scraped_at": "2026-07-30T01:27:56.835411Z"
+  },
+  {
+    "id": "PB-001",
+    "project_title": "Punjab Smart Cities — Ludhiana Industrial Zone Upgrade",
+    "state": "Punjab",
+    "constituency": "Ludhiana West",
+    "sanctioned_amount_cr": 780.0,
+    "progress_percent": 39,
+    "start_date": "2020-10-01",
+    "contractor": "HPCL Infrastructure Ltd.",
+    "ruling_party_at_start": "Indian National Congress (INC)",
+    "current_ruling_party": "Aam Aadmi Party (AAP)",
+    "official_in_charge": "Commissioner, Ludhiana Municipal Corp.",
+    "coordinates": [
+      30.901,
+      75.8573
+    ],
+    "source": "Smart Cities Mission Dashboard 2024",
+    "delay_months": 22,
+    "tags": [
+      "smart city",
+      "industrial",
+      "urban"
+    ],
+    "severity_score": 47580.0,
+    "scraped_at": "2026-07-30T01:27:56.835402Z"
+  },
+  {
+    "id": "OR-001",
+    "project_title": "Odisha Bhubaneswar–Puri Expressway (Package 2)",
+    "state": "Odisha",
+    "constituency": "Puri",
+    "sanctioned_amount_cr": 890.0,
+    "progress_percent": 48,
+    "start_date": "2020-12-01",
+    "contractor": "Afcons Infrastructure",
+    "ruling_party_at_start": "Biju Janata Dal (BJD)",
+    "current_ruling_party": "Bharatiya Janata Party (BJP)",
+    "official_in_charge": "CE, NH Division Odisha",
+    "coordinates": [
+      19.8133,
+      85.8312
+    ],
+    "source": "NHAI Odisha Region Report",
+    "delay_months": 20,
+    "tags": [
+      "expressway",
+      "highway",
+      "tourism"
+    ],
+    "severity_score": 46280.0,
+    "scraped_at": "2026-07-30T01:27:56.835416Z"
+  },
+  {
+    "id": "RJ-001",
+    "project_title": "Rajasthan Rural Drinking Water Supply (Jal Jeevan — Barmer)",
+    "state": "Rajasthan",
+    "constituency": "Barmer",
+    "sanctioned_amount_cr": 456.7,
+    "progress_percent": 28,
+    "start_date": "2021-06-01",
+    "contractor": "Patel Engineering Ltd.",
+    "ruling_party_at_start": "Indian National Congress (INC)",
+    "current_ruling_party": "Bharatiya Janata Party (BJP)",
+    "official_in_charge": "CE, PHED Rajasthan",
+    "coordinates": [
+      25.7459,
+      71.3938
+    ],
+    "source": "Jal Shakti Ministry Dashboard",
+    "delay_months": 20,
+    "tags": [
+      "water supply",
+      "rural",
+      "Jal Jeevan"
+    ],
+    "severity_score": 32882.4,
+    "scraped_at": "2026-07-30T01:27:56.835368Z"
+  },
+  {
+    "id": "GA-001",
+    "project_title": "Goa Mormugao Port Trust New Berth & Container Terminal",
+    "state": "Goa",
+    "constituency": "Vasco Da Gama",
+    "sanctioned_amount_cr": 423.0,
+    "progress_percent": 41,
+    "start_date": "2021-03-01",
+    "contractor": "Mormugao Port Authority + Adani Ports",
+    "ruling_party_at_start": "Bharatiya Janata Party (BJP)",
+    "current_ruling_party": "Bharatiya Janata Party (BJP)",
+    "official_in_charge": "Chairman, Mormugao Port Authority",
+    "coordinates": [
+      15.4112,
+      73.8012
+    ],
+    "source": "SAGARMALA Project Dashboard",
+    "delay_months": 15,
+    "tags": [
+      "port",
+      "maritime",
+      "container"
+    ],
+    "severity_score": 24957.0,
+    "scraped_at": "2026-07-30T01:27:56.835449Z"
   },
   {
     "id": "TR-001",
@@ -500,47 +605,230 @@
     "sanctioned_amount_cr": 345.0,
     "progress_percent": 29,
     "start_date": "2021-07-01",
-    "contractor": "CONCOR + Tripura Industrial Development Corp.",
+    "contractor": "CONCOR + TIDC",
     "ruling_party_at_start": "Bharatiya Janata Party (BJP)",
     "current_ruling_party": "Bharatiya Janata Party (BJP)",
     "official_in_charge": "MD, TIDC",
-    "coordinates": [23.8315, 91.2868],
+    "coordinates": [
+      23.8315,
+      91.2868
+    ],
     "source": "DPIIT Logistics Hub Tracker",
     "delay_months": 16,
-    "tags": ["logistics", "multimodal", "Northeast"]
+    "tags": [
+      "logistics",
+      "multimodal",
+      "Northeast"
+    ],
+    "severity_score": 24495.0,
+    "scraped_at": "2026-07-30T01:27:56.835483Z"
   },
   {
-    "id": "AR-001",
-    "project_title": "Arunachal Pradesh Trans-Arunachal Highway (Itanagar–Pasighat Section)",
-    "state": "Arunachal Pradesh",
-    "constituency": "Itanagar",
-    "sanctioned_amount_cr": 8930.0,
-    "progress_percent": 38,
-    "start_date": "2018-06-01",
-    "contractor": "Chetak Enterprises Ltd.",
+    "id": "MN-001",
+    "project_title": "Imphal Smart City Road & Sewerage Network (Package B)",
+    "state": "Manipur",
+    "constituency": "Imphal East",
+    "sanctioned_amount_cr": 312.0,
+    "progress_percent": 22,
+    "start_date": "2021-08-01",
+    "contractor": "NBCC India Ltd.",
     "ruling_party_at_start": "Bharatiya Janata Party (BJP)",
     "current_ruling_party": "Bharatiya Janata Party (BJP)",
-    "official_in_charge": "CE, Arunachal PWD",
-    "coordinates": [27.0844, 93.6053],
-    "source": "BRO & NHIDCL Combined Report 2024",
-    "delay_months": 48,
-    "tags": ["highway", "strategic", "border road"]
+    "official_in_charge": "CEO, Imphal Smart City SPV",
+    "coordinates": [
+      24.817,
+      93.9368
+    ],
+    "source": "Smart Cities Mission Portal",
+    "delay_months": 20,
+    "tags": [
+      "smart city",
+      "sewerage",
+      "Northeast"
+    ],
+    "severity_score": 24336.0,
+    "scraped_at": "2026-07-30T01:27:56.835459Z"
   },
   {
-    "id": "DN-001",
-    "project_title": "Delhi–Meerut Regional Rapid Transit System (RRTS) Corridor — Ghaziabad–Meerut South",
-    "state": "Delhi NCT",
-    "constituency": "Ghaziabad",
-    "sanctioned_amount_cr": 30274.0,
-    "progress_percent": 89,
-    "start_date": "2019-03-08",
-    "contractor": "Samsung C&T Corp + Alstom",
-    "ruling_party_at_start": "Aam Aadmi Party (AAP)",
+    "id": "AP-003",
+    "project_title": "Machilipatnam–Pedana State Highway 4-Lane Widening",
+    "state": "Andhra Pradesh",
+    "constituency": "Machilipatnam",
+    "sanctioned_amount_cr": 315.0,
+    "progress_percent": 31,
+    "start_date": "2020-07-01",
+    "contractor": "NCC Ltd.",
+    "ruling_party_at_start": "YSR Congress Party (YSRCP)",
+    "current_ruling_party": "Telugu Desam Party (TDP)",
+    "official_in_charge": "SE, Roads & Buildings, Krishna",
+    "coordinates": [
+      16.1875,
+      81.139
+    ],
+    "source": "AP Vigilance & Enforcement Dept.",
+    "delay_months": 42,
+    "tags": [
+      "highway",
+      "road",
+      "transport"
+    ],
+    "severity_score": 21735.0,
+    "scraped_at": "2026-07-30T01:27:56.835346Z"
+  },
+  {
+    "id": "JH-001",
+    "project_title": "Jharkhand Adivasi Village Road (PMGSY Phase III — Khunti)",
+    "state": "Jharkhand",
+    "constituency": "Khunti",
+    "sanctioned_amount_cr": 234.0,
+    "progress_percent": 33,
+    "start_date": "2022-04-01",
+    "contractor": "Local PMGSY Contractor Pool",
+    "ruling_party_at_start": "Jharkhand Mukti Morcha (JMM)",
     "current_ruling_party": "Bharatiya Janata Party (BJP)",
-    "official_in_charge": "MD, NCRTC",
-    "coordinates": [28.7041, 77.3044],
-    "source": "NCRTC Monthly Status Report",
+    "official_in_charge": "PIU Chief Engineer, RIDA",
+    "coordinates": [
+      23.0717,
+      85.2752
+    ],
+    "source": "PMGSY MIS Portal 2024",
+    "delay_months": 14,
+    "tags": [
+      "rural road",
+      "tribal",
+      "PMGSY"
+    ],
+    "severity_score": 15678.0,
+    "scraped_at": "2026-07-30T01:27:56.835426Z"
+  },
+  {
+    "id": "MZ-001",
+    "project_title": "Mizoram Aizawl Water Supply Augmentation (Tuivawl Dam)",
+    "state": "Mizoram",
+    "constituency": "Aizawl North",
+    "sanctioned_amount_cr": 198.0,
+    "progress_percent": 36,
+    "start_date": "2020-09-01",
+    "contractor": "Spunpipe India + PHED Mizoram",
+    "ruling_party_at_start": "Zoram People's Movement (ZPM)",
+    "current_ruling_party": "Zoram People's Movement (ZPM)",
+    "official_in_charge": "SE, PHED Aizawl",
+    "coordinates": [
+      23.7271,
+      92.7176
+    ],
+    "source": "Jal Jeevan Mission MIS Dashboard",
+    "delay_months": 16,
+    "tags": [
+      "water supply",
+      "dam",
+      "Northeast"
+    ],
+    "severity_score": 12672.0,
+    "scraped_at": "2026-07-30T01:27:56.835473Z"
+  },
+  {
+    "id": "AP-001",
+    "project_title": "Pedana Municipal Road Widening & Drainage Improvement Project",
+    "state": "Andhra Pradesh",
+    "constituency": "Pedana",
+    "sanctioned_amount_cr": 142.5,
+    "progress_percent": 18,
+    "start_date": "2021-04-01",
+    "contractor": "Sri Venkata Constructions Pvt. Ltd.",
+    "ruling_party_at_start": "YSR Congress Party (YSRCP)",
+    "current_ruling_party": "Telugu Desam Party (TDP)",
+    "official_in_charge": "District Collector, Krishna",
+    "coordinates": [
+      16.2517,
+      81.1498
+    ],
+    "source": "Andhra Pradesh State Audit Report 2023-24",
+    "delay_months": 28,
+    "tags": [
+      "road",
+      "drainage",
+      "urban"
+    ],
+    "severity_score": 11685.0,
+    "scraped_at": "2026-07-30T01:27:56.835325Z"
+  },
+  {
+    "id": "AP-002",
+    "project_title": "Pedana Fishermen Harbour Modernisation & Cold Storage Facility",
+    "state": "Andhra Pradesh",
+    "constituency": "Pedana",
+    "sanctioned_amount_cr": 89.3,
+    "progress_percent": 9,
+    "start_date": "2022-01-15",
+    "contractor": "Coastal Infrastructure Corp.",
+    "ruling_party_at_start": "YSR Congress Party (YSRCP)",
+    "current_ruling_party": "Telugu Desam Party (TDP)",
+    "official_in_charge": "Fisheries Dept. Commissioner, AP",
+    "coordinates": [
+      16.248,
+      81.165
+    ],
+    "source": "CAG Report 2023",
     "delay_months": 18,
-    "tags": ["RRTS", "rapid transit", "NCR"]
+    "tags": [
+      "fisheries",
+      "harbour",
+      "livelihood"
+    ],
+    "severity_score": 8126.3,
+    "scraped_at": "2026-07-30T01:27:56.835340Z"
+  },
+  {
+    "id": "CG-001",
+    "project_title": "Raipur Smart City — Integrated Command & Control Centre",
+    "state": "Chhattisgarh",
+    "constituency": "Raipur City South",
+    "sanctioned_amount_cr": 187.5,
+    "progress_percent": 62,
+    "start_date": "2020-08-01",
+    "contractor": "Wipro GE Healthcare + Raipur Muni Corp.",
+    "ruling_party_at_start": "Indian National Congress (INC)",
+    "current_ruling_party": "Bharatiya Janata Party (BJP)",
+    "official_in_charge": "CEO, Raipur Smart City Ltd.",
+    "coordinates": [
+      21.2514,
+      81.6296
+    ],
+    "source": "Smart Cities Mission Portal 2024",
+    "delay_months": 18,
+    "tags": [
+      "smart city",
+      "ICT",
+      "urban"
+    ],
+    "severity_score": 7125.0,
+    "scraped_at": "2026-07-30T01:27:56.835421Z"
+  },
+  {
+    "id": "SK-001",
+    "project_title": "Sikkim Gangtok Ropeway Expansion (Nam Nang–MG Marg)",
+    "state": "Sikkim",
+    "constituency": "Gangtok",
+    "sanctioned_amount_cr": 78.5,
+    "progress_percent": 55,
+    "start_date": "2022-06-01",
+    "contractor": "Doppelmayr India Pvt. Ltd.",
+    "ruling_party_at_start": "Sikkim Krantikari Morcha (SKM)",
+    "current_ruling_party": "Sikkim Krantikari Morcha (SKM)",
+    "official_in_charge": "SE, Urban Development Dept. Sikkim",
+    "coordinates": [
+      27.3389,
+      88.6065
+    ],
+    "source": "Sikkim Tourism Dept. Records",
+    "delay_months": 12,
+    "tags": [
+      "ropeway",
+      "tourism",
+      "urban"
+    ],
+    "severity_score": 3532.5,
+    "scraped_at": "2026-07-30T01:27:56.835464Z"
   }
 ]
