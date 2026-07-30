@@ -103,6 +103,9 @@ def _infer_state(text: str) -> str:
         "tamil": "Tamil Nadu",
         "kerala": "Kerala",
         "delhi": "Delhi NCT",
+        "uttar pradesh": "Uttar Pradesh",
+        "gujarat": "Gujarat",
+        "west bengal": "West Bengal"
     }
     text_lower = text.lower()
     for keyword, state_name in state_keywords.items():
@@ -116,11 +119,13 @@ def _state_centroid(state: str) -> list[float]:
         "Telangana":      [17.3850, 78.4867],
         "Maharashtra":    [19.7515, 75.7139],
         "Delhi NCT":      [28.7041, 77.1025],
+        "Karnataka":      [15.3173, 75.7139],
+        "Tamil Nadu":     [11.1271, 78.6569],
     }
     return centroids.get(state, [20.5937, 78.9629])
 
 # =============================================================================
-# HTML PARSER (BeautifulSoup)
+# HTML PARSER (BeautifulSoup) - UPDATED FOR ACCURACY
 # =============================================================================
 
 def _parse_cppp_table(html: str) -> list[dict[str, Any]]:
@@ -128,23 +133,40 @@ def _parse_cppp_table(html: str) -> list[dict[str, Any]]:
     soup = BeautifulSoup(html, "html.parser")
     projects: list[dict[str, Any]] = []
 
-    table = soup.find("table", {"id": re.compile(r"tender", re.I)})
-    if not table:
-        table = soup.find("table")
-    if not table:
-        log.warning("No table found in CPPP response HTML.")
+    # 1. SMART TARGETING: Find the actual data table, skip the layout menus
+    target_table = None
+    for table in soup.find_all("table"):
+        text_content = table.get_text()
+        # The real list of tenders always contains these specific column headers
+        if "Tender Title" in text_content and "Organisation Chain" in text_content:
+            target_table = table
+            break
+
+    if not target_table:
+        log.warning("Could not find the actual tender data table in the HTML. Site layout may have changed.")
         return []
 
-    rows = table.find_all("tr")[1:]  # skip header row
-    for idx, row in enumerate(rows, start=1):
-        cells = [td.get_text(strip=True) for td in row.find_all(["td", "th"])]
-        if len(cells) < 5:
+    # 2. EXTRACT DATA ROWS
+    rows = target_table.find_all("tr")
+    for idx, row in enumerate(rows):
+        # Skip header rows
+        if row.find("th") or "list_header" in row.get("class", []):
             continue
 
-        raw_amount = _safe_float(cells[3] if len(cells) > 3 else "0")
-        title      = cells[1] if len(cells) > 1 else f"Project #{idx}"
-        org        = cells[2] if len(cells) > 2 else "Government of India"
-        state      = _infer_state(org + " " + title)
+        cells = [td.get_text(" ", strip=True) for td in row.find_all("td")]
+        
+        # Real CPPP tender tables usually have exactly 6 columns: 
+        # S.No | e-Published Date | Closing Date | Opening Date | Title and Ref.No | Organisation Chain
+        if len(cells) < 6:
+            continue
+
+        title = cells[4]
+        org = cells[5]
+        
+        # Clean up excessive whitespace or HTML artifacts in the title
+        title = re.sub(r'\s+', ' ', title).strip()
+        
+        state = _infer_state(org + " " + title)
 
         projects.append(
             build_project_record(
@@ -152,7 +174,9 @@ def _parse_cppp_table(html: str) -> list[dict[str, Any]]:
                 project_title=title,
                 state=state,
                 constituency="Unknown",
-                sanctioned_amount_cr=raw_amount / 10_000_000,  # paisa → crore
+                # Note: The main table on CPPP doesn't show exact tender value amounts without clicking into them.
+                # Setting a placeholder of 1.0 Crore for dashboard visibility.
+                sanctioned_amount_cr=1.0, 
                 progress_percent=0.0,
                 start_date=str(date.today()),
                 contractor=org,
@@ -180,7 +204,6 @@ def scrape_live() -> list[dict[str, Any]] | None:
     try:
         log.info("Bypassing firewall via ScraperAPI Residential Proxies...")
         
-        # URL UPDATED TO THE CORRECT LIVE PATH
         target_url = "https://eprocure.gov.in/eprocure/app?page=FrontEndLatestActiveTenders&service=page"
         
         payload = {
@@ -208,7 +231,7 @@ def scrape_live() -> list[dict[str, Any]] | None:
         return None
 
 # =============================================================================
-# FAIL-SAFE SEED ENGINE (Empty Fallback)
+# FAIL-SAFE SEED ENGINE
 # =============================================================================
 
 def get_seed_data() -> list[dict[str, Any]]:
@@ -221,7 +244,7 @@ def get_seed_data() -> list[dict[str, Any]]:
 
 def main() -> None:
     log.info("=" * 70)
-    log.info("India Civic Accountability — Data Scraper v2.0")
+    log.info("India Civic Accountability — Data Scraper v2.1")
     log.info("Lead Architect: Shaik Abdul Gaffar")
     log.info("=" * 70)
 
@@ -245,7 +268,7 @@ def main() -> None:
     if projects:
         top_project = sorted(projects, key=lambda x: x["severity_score"], reverse=True)[0]
         log.info("Pipeline complete. Top project: [%s] %s (Severity: %s)", 
-                 top_project["id"], top_project["project_title"], int(top_project["severity_score"]))
+                 top_project["id"], top_project["project_title"][:40] + "...", int(top_project["severity_score"]))
     else:
         log.info("Pipeline complete. No projects loaded.")
 
