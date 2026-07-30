@@ -180,7 +180,9 @@ def scrape_live() -> list[dict[str, Any]] | None:
     try:
         log.info("Bypassing firewall via ScraperAPI Residential Proxies...")
         
-        target_url = "https://eprocure.gov.in/cppp/latestactivetenders"
+        # URL UPDATED TO THE CORRECT LIVE PATH
+        target_url = "https://eprocure.gov.in/eprocure/app?page=FrontEndLatestActiveTenders&service=page"
+        
         payload = {
             'api_key': api_key, 
             'url': target_url,
