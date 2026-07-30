@@ -1,0 +1,136 @@
+# =============================================================================
+# .github/workflows/scrape_and_deploy.yml
+# India Civic Accountability Platform — Daily Scrape + Auto-Commit
+# =============================================================================
+# Lead Architect & Original Creator  : Shaik Abdul Gaffar
+# Data Strategy & Ideation           : Sudarraman Yateendran
+# Civic Policy Researcher            : Vummiti Yasho Vardhan
+# UI/UX & Accessibility Consultant   : Vishnumurthula Santosh
+# Security & Quality Assurance       : Borra Shashi Ram
+# Licensed under Apache 2.0 — Attribution MUST be retained.
+# =============================================================================
+
+name: "Daily Scrape & Deploy"
+
+on:
+  # ── Run automatically every day at midnight UTC ─────────────────────────
+  schedule:
+    - cron: "0 0 * * *"
+
+  # ── Allow manual trigger from GitHub Actions tab ─────────────────────────
+  workflow_dispatch:
+    inputs:
+      force_seed:
+        description: "Force seed data (skip live scrape)"
+        required: false
+        default: "false"
+        type: choice
+        options:
+          - "false"
+          - "true"
+
+  # ── Also trigger on push to main branch (for CI validation) ──────────────
+  push:
+    branches:
+      - main
+    paths:
+      - "scraper/**"
+      - ".github/workflows/scrape_and_deploy.yml"
+
+permissions:
+  contents: write   # needed to push data.json back to repo
+
+jobs:
+  scrape:
+    name: "Scrape & Commit Data"
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      # ── 1. Checkout source ───────────────────────────────────────────────
+      - name: "Checkout repository"
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # ── 2. Setup Python ──────────────────────────────────────────────────
+      - name: "Set up Python 3.11"
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+          cache-dependency-path: "scraper/requirements.txt"
+
+      # ── 3. Install dependencies ──────────────────────────────────────────
+      - name: "Install Python dependencies"
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r scraper/requirements.txt
+
+      # ── 4. Run the scraper ───────────────────────────────────────────────
+      - name: "Run scraper"
+        env:
+          FORCE_SEED: ${{ github.event.inputs.force_seed || 'false' }}
+        run: |
+          echo "Force seed mode: $FORCE_SEED"
+          python scraper/main.py
+          echo "--- Scraped output (first 40 lines) ---"
+          head -n 40 public/data.json
+
+      # ── 5. Validate output JSON ──────────────────────────────────────────
+      - name: "Validate output JSON"
+        run: |
+          python - <<'EOF'
+          import json, sys
+          with open("public/data.json") as f:
+              data = json.load(f)
+          assert isinstance(data, list), "data.json must be a JSON array"
+          assert len(data) > 0, "data.json must not be empty"
+          required = ["id","project_title","state","constituency",
+                      "sanctioned_amount_cr","progress_percent",
+                      "contractor","coordinates","severity_score"]
+          for i, p in enumerate(data):
+              for field in required:
+                  assert field in p, f"Record {i} missing field: {field}"
+          print(f"✅  Validation passed: {len(data)} projects found.")
+          EOF
+
+      # ── 6. Commit data.json if changed ──────────────────────────────────
+      - name: "Commit updated data.json"
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/data.json
+          # Only commit if there are actual changes
+          if git diff --staged --quiet; then
+            echo "No changes to data.json — skipping commit."
+          else
+            TIMESTAMP=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+            git commit -m "chore(data): auto-update public/data.json [${TIMESTAMP}]
+
+          Automated scrape by GitHub Actions.
+          Workflow: scrape_and_deploy.yml
+          Runner:   ${{ runner.name }}"
+            git push
+            echo "✅  data.json committed and pushed."
+          fi
+
+      # ── 7. (Optional) Trigger Netlify rebuild via deploy hook ────────────
+      #       Uncomment and add NETLIFY_DEPLOY_HOOK to repo secrets if needed.
+      # - name: "Trigger Netlify deploy"
+      #   if: success()
+      #   run: |
+      #     curl -X POST -d {} "${{ secrets.NETLIFY_DEPLOY_HOOK }}"
+
+      # ── 8. Report summary ─────────────────────────────────────────────────
+      - name: "Print summary"
+        if: always()
+        run: |
+          echo "## Scrape Summary" >> $GITHUB_STEP_SUMMARY
+          echo "| Item | Value |" >> $GITHUB_STEP_SUMMARY
+          echo "|------|-------|" >> $GITHUB_STEP_SUMMARY
+          COUNT=$(python -c "import json; d=json.load(open('public/data.json')); print(len(d))" 2>/dev/null || echo "unknown")
+          echo "| Projects in data.json | \`${COUNT}\` |" >> $GITHUB_STEP_SUMMARY
+          echo "| Timestamp | \`$(date -u)\` |" >> $GITHUB_STEP_SUMMARY
+          echo "| Trigger | \`${{ github.event_name }}\` |" >> $GITHUB_STEP_SUMMARY

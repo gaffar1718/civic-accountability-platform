@@ -1,0 +1,62 @@
+# ============================================================
+# netlify.toml — India Civic Accountability Platform
+# Lead Architect & Original Creator: Shaik Abdul Gaffar
+# Data Strategy & Ideation: Sudarraman Yateendran
+# Civic Policy Researcher: Vummiti Yasho Vardhan
+# UI/UX & Accessibility Consultant: Vishnumurthula Santosh
+# Security & Quality Assurance: Borra Shashi Ram
+# Licensed under Apache 2.0 — Attribution MUST be retained.
+# ============================================================
+
+[build]
+  command       = "npm run build"
+  publish       = "dist"
+  functions     = "netlify/functions"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# ── SPA client-side routing fallback ──────────────────────
+[[redirects]]
+  from   = "/*"
+  to     = "/index.html"
+  status = 200
+
+# ── Security headers (applied to every response) ──────────
+[[headers]]
+  for = "/*"
+
+  [headers.values]
+    # ── Content Security Policy ──────────────────────────
+    # default-src 'self'           : only same-origin by default
+    # script-src 'self' + CDNs    : Turnstile + Unpkg allowed
+    # style-src  'self' unsafe-inline + unpkg (Leaflet CSS)
+    # connect-src 'self'           : no external API calls from browser
+    # img-src 'self' data: tile-servers : Leaflet tiles + data URIs
+    # font-src 'self'              : Google Fonts served locally
+    # frame-src challenges.cloudflare.com : Turnstile iframe
+    # object-src 'none'            : block Flash / plugins entirely
+    # base-uri 'self'              : prevent base-tag hijacking
+    # form-action 'self'           : forms only post to same origin
+    Content-Security-Policy = "default-src 'self'; script-src 'self' https://challenges.cloudflare.com https://unpkg.com; style-src 'self' 'unsafe-inline' https://unpkg.com https://fonts.googleapis.com; connect-src 'self'; img-src 'self' data: https://*.tile.openstreetmap.org https://*.basemaps.cartocdn.com; font-src 'self' https://fonts.gstatic.com; frame-src https://challenges.cloudflare.com; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests"
+
+    # ── Transport & framing ──────────────────────────────
+    Strict-Transport-Security      = "max-age=63072000; includeSubDomains; preload"
+    X-Frame-Options                = "DENY"
+    X-Content-Type-Options         = "nosniff"
+    Referrer-Policy                = "strict-origin-when-cross-origin"
+    Permissions-Policy             = "camera=(), microphone=(), geolocation=(), payment=()"
+    Cross-Origin-Opener-Policy     = "same-origin"
+    Cross-Origin-Embedder-Policy   = "require-corp"
+    Cross-Origin-Resource-Policy   = "same-origin"
+
+# ── Cache static assets aggressively ──────────────────────
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/data.json"
+  [headers.values]
+    Cache-Control = "public, max-age=3600, must-revalidate"

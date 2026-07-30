@@ -1,0 +1,94 @@
+<!-- ==========================================================
+     index.html — India Civic Accountability Platform
+     Lead Architect & Original Creator: Shaik Abdul Gaffar
+     Data Strategy & Ideation: Sudarraman Yateendran
+     Civic Policy Researcher: Vummiti Yasho Vardhan
+     UI/UX & Accessibility Consultant: Vishnumurthula Santosh
+     Security & Quality Assurance: Borra Shashi Ram
+     Licensed under Apache 2.0 — Attribution MUST be retained.
+     ========================================================== -->
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ── SEO & Open Graph ───────────────────────────── -->
+    <title>India Civic Accountability — Track Every Rupee, Hold Every Official</title>
+    <meta name="description" content="India's zero-cost, open-source civic accountability platform exposing delayed public infrastructure projects, budget overruns, and contractor failures across all 28 states and 8 union territories." />
+    <meta name="keywords" content="civic accountability, india government projects, public spending tracker, delayed projects, corruption, transparency, eprocure" />
+    <meta name="author" content="Shaik Abdul Gaffar" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="India Civic Accountability — Track Every Rupee" />
+    <meta property="og:description" content="Real-time tracker of delayed public projects. Built for citizens, funded by no one." />
+    <meta property="og:image" content="/og-image.png" />
+    <meta property="og:url" content="https://india-civic-accountability.netlify.app" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="India Civic Accountability" />
+    <meta name="twitter:description" content="Real-time tracker of delayed public infrastructure projects across India." />
+    <meta name="twitter:image" content="/og-image.png" />
+
+    <!-- ── Favicon ────────────────────────────────────── -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <!-- ── Leaflet CSS (required before React mount) ──── -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin="anonymous"
+    />
+
+    <!-- ── Google Fonts ───────────────────────────────── -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ── Theme colour for mobile chrome ─────────────── -->
+    <meta name="theme-color" content="#0F172A" />
+  </head>
+
+  <body>
+    <!-- React SPA root -->
+    <div id="root"></div>
+
+    <!-- ════════════════════════════════════════════════════
+         NETLIFY FORMS — Static registration of all forms.
+         Netlify's build bot requires a hidden copy of every
+         form it needs to create an endpoint for.  The React
+         modal submits to the same name="report-inaccuracy"
+         endpoint discovered here.
+         ════════════════════════════════════════════════════ -->
+    <form
+      name="report-inaccuracy"
+      netlify
+      netlify-honeypot="bot-field"
+      hidden
+      aria-hidden="true"
+    >
+      <!-- Honeypot: real users never fill this -->
+      <input type="text" name="bot-field" />
+      <!-- Hidden form-name required by Netlify -->
+      <input type="hidden" name="form-name" value="report-inaccuracy" />
+      <!-- Mirror every field used in the React modal -->
+      <input type="text" name="reporter_name" />
+      <input type="email" name="reporter_email" />
+      <input type="text" name="project_id" />
+      <input type="text" name="project_title" />
+      <textarea name="issue_description"></textarea>
+      <input type="text" name="cf-turnstile-response" />
+    </form>
+
+    <!-- React entry point -->
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
