@@ -6,7 +6,7 @@
     "constituency": "Unknown",
     "sanctioned_amount_cr": 1.0,
     "progress_percent": 0.0,
-    "start_date": "2026-08-16",
+    "start_date": "2026-08-17",
     "contractor": "Government of India",
     "ruling_party_at_start": "Unknown",
     "current_ruling_party": "Unknown",
@@ -19,7 +19,7 @@
     "delay_months": 0,
     "tags": [],
     "severity_score": 100.0,
-    "scraped_at": "2026-08-16T01:12:38.215056Z"
+    "scraped_at": "2026-08-17T01:09:45.314319Z"
   },
   {
     "id": "LIVE-0094",
@@ -28,7 +28,7 @@
     "constituency": "Unknown",
     "sanctioned_amount_cr": 1.0,
     "progress_percent": 0.0,
-    "start_date": "2026-08-16",
+    "start_date": "2026-08-17",
     "contractor": "Version : 1.09.24 16-Jul-2026 (c) 2017 Tenders NIC, All rights reserved. Site best viewed with a screen resolution 1920 x 1080.",
     "ruling_party_at_start": "Unknown",
     "current_ruling_party": "Unknown",
@@ -41,7 +41,7 @@
     "delay_months": 0,
     "tags": [],
     "severity_score": 100.0,
-    "scraped_at": "2026-08-16T01:12:38.215332Z"
+    "scraped_at": "2026-08-17T01:09:45.314503Z"
   },
   {
     "id": "LIVE-0097",
@@ -50,7 +50,7 @@
     "constituency": "Unknown",
     "sanctioned_amount_cr": 1.0,
     "progress_percent": 0.0,
-    "start_date": "2026-08-16",
+    "start_date": "2026-08-17",
     "contractor": "Government of India",
     "ruling_party_at_start": "Unknown",
     "current_ruling_party": "Unknown",
@@ -63,6 +63,6 @@
     "delay_months": 0,
     "tags": [],
     "severity_score": 100.0,
-    "scraped_at": "2026-08-16T01:12:38.215454Z"
+    "scraped_at": "2026-08-17T01:09:45.314583Z"
   }
 ]
